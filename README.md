@@ -4,9 +4,9 @@
 
 **Instructor: Alireza Olama**
 
-## Homework Assignment 2: Optimizing Matrix Multiplication in C++
+## Homework Assignment 4: Optimizing Matrix Multiplication in C++
 
-**Due Date**: 08/05/2025
+**Due Date**: 31/05/2026
 
 **Points**: 100
 
@@ -14,8 +14,7 @@
 
 ### Assignment Overview
 
-Welcome to the second homework assignment of the Parallel Programming course! In Assignment 1, you implemented a naive
-matrix multiplication using a triple nested loop. In this assignment, you will optimize the performance of your naive
+Welcome to the last homework assignment of the Parallel Programming course! In this assignment, you will optimize the performance of a naive matrix multiplication
 implementation using two techniques:
 
 1. **Cache Optimization via Blocked Matrix Multiplication**: Improve data locality to reduce cache misses.
@@ -23,7 +22,7 @@ implementation using two techniques:
 
 Your task is to implement both optimizations in the provided C++ `main.cpp` file, measure their performance, and compare the
 wall clock time of the naive, cache-optimized, and parallel implementations for each test case. This assignment builds
-on your Assignment 1 code, so ensure your naive implementation is correct before starting.
+on naive matmul implementation, so ensure your naive implementation is correct before starting.
 
 ---
 
@@ -130,9 +129,9 @@ Example table format:
 
 #### Matrix Storage and Memory Management
 
-- Continue using row-major order for all matrices, as in Assignment 1.
+- Row-major order for all matrices
 - Use C-style arrays with manual memory management (`malloc` or `new`, `free` or `delete`).
-- Do not use STL containers or smart pointers.
+- Do not use smart pointers.
 
 ---
 
@@ -157,8 +156,8 @@ Example table format:
     - Use CLion or Visual Studio with CMake.
     - Alternatively, use MinGW with `cmake -G "MinGW Makefiles"` and `make`.
 - **Linux/Mac Users**:
-    - Make sure gcc compiler is installed (`brew install gcc` on Mac).
-    - Configure cmake to use the correct compiler:
+    - Make sure the GCC compiler is installed (`brew install gcc` on Mac).
+    - Configure CMake to use the correct compiler:
       ```bash
       cmake -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ .
       ```
