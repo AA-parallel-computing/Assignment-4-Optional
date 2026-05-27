@@ -173,11 +173,11 @@ Example table format:
 
 #### Fork and Clone the Repository
 
-- Fork the Assignment 2 repository (provided separately).
+- Fork the Assignment 4 repository (provided separately).
 - Clone your fork:
   ```bash
-  git clone https://github.com/parallelcomputingabo/Homework-2.git
-  cd Homework-2
+  git clone https://github.com/AA-parallel-computing/Assignment-4-Optional.git
+  cd Assignment-4-Optional
   ```
 
 #### Create a New Branch
