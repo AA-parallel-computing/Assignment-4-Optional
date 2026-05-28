@@ -17,7 +17,7 @@ if(APPLE)
 endif()
 
 
-add_executable(matmul main_ans.cpp)
+add_executable(matmul main.cpp)
 
 
 if(OpenMP_CXX_FOUND)
